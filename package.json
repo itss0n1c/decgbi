@@ -2,6 +2,7 @@
 	"name": "decgbi",
 	"version": "1.0.0",
 	"description": "A library for decompressing CgBI files (used in some iOS images) into PNG format.",
+	"license": "GPL-3.0-only",
 	"type": "module",
 	"files": [
 		"dist"

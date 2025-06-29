@@ -89,6 +89,11 @@ function defilter(raw: Uint8Array, w: number, h: number, bpp: number): Uint8Arra
 	return out;
 }
 
+/**
+ * Decodes a PNG image with CgBI chunk.
+ * @param data The PNG image data as a Uint8Array.
+ * @returns A Uint8Array containing the decoded PNG image data.
+ */
 function decgbi(data: Uint8Array): Uint8Array {
 	if (!PNG_SIG.every((v, i) => v === data[i])) throw new Error('Not a PNG');
 
